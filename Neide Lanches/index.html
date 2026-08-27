@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neide Lanches</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVBAR SUPERIOR — apenas o nome da mercearia
+       ============================================ -->
+  <header class="navbar">
+    <a href="#topo" class="navbar__logo"><span></span>Neide Lanches</a>
+  </header>
+
+  <!-- ============================================
+       HERO — nome da mercearia em destaque
+       ============================================ -->
+  <section class="hero" id="topo">
+    <p class="hero__eyebrow">Seja bem-vindo(a)</p>
+    <h1 class="hero__title">Neide Lanches</h1>
+    <p class="hero__subtitle">Sabor de casa, feito pra você</p>
+    <div class="toldo">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <path d="M0,0 C 50,40 100,0 150,20 C 200,40 250,0 300,20 C 350,40 400,0 450,20 C 500,40 550,0 600,20 C 650,40 700,0 750,20 C 800,40 850,0 900,20 C 950,40 1000,0 1050,20 C 1100,40 1150,0 1200,20 L1200,0 Z" fill="#FFDCC2"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CARROSSEL — troque o src de cada <img> pela sua foto
+       ============================================ -->
+  <div class="carrossel-wrap">
+    <div class="carrossel" id="carrossel">
+      <div class="carrossel__track" id="carrosselTrack">
+
+        <div class="carrossel__slide">
+          <!-- troque o src abaixo pela imagem 1 -->
+          <img src="" alt="Foto 1 da Neide Lanches" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">📸 Coloque aqui a imagem 1</div>
+          <div class="carrossel__legenda">Legenda da imagem 1</div>
+        </div>
+
+        <div class="carrossel__slide">
+          <!-- troque o src abaixo pela imagem 2 -->
+          <img src="" alt="Foto 2 da Neide Lanches" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">📸 Coloque aqui a imagem 2</div>
+          <div class="carrossel__legenda">Legenda da imagem 2</div>
+        </div>
+
+        <div class="carrossel__slide">
+          <!-- troque o src abaixo pela imagem 3 -->
+          <img src="" alt="Foto 3 da Neide Lanches" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">📸 Coloque aqui a imagem 3</div>
+          <div class="carrossel__legenda">Legenda da imagem 3</div>
+        </div>
+
+        <div class="carrossel__slide">
+          <!-- troque o src abaixo pela imagem 4 -->
+          <img src="" alt="Foto 4 da Neide Lanches" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">📸 Coloque aqui a imagem 4</div>
+          <div class="carrossel__legenda">Legenda da imagem 4</div>
+        </div>
+
+      </div>
+
+      <button class="carrossel__seta carrossel__seta--prev" id="setaPrev" aria-label="Imagem anterior">‹</button>
+      <button class="carrossel__seta carrossel__seta--next" id="setaNext" aria-label="Próxima imagem">›</button>
+      <div class="carrossel__dots" id="carrosselDots"></div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       PRODUTOS — troque nome, descrição, preço e imagem de cada card
+       ============================================ -->
+  <section class="produtos" id="produtos">
+    <h2 class="produtos__titulo">Nosso Cardápio</h2>
+    <p class="produtos__linha">Escolha o seu favorito e chama no zap!</p>
+
+    <div class="produtos__grid" id="gridProdutos">
+      <!-- CARD 1 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🥪</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🍔</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🥤</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🍟</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 5 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🌭</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 6 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🍰</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 7 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🍪</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 8 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🥧</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 9 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🍕</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+      <!-- CARD 10 -->
+      <article class="card">
+        <div class="card__img-wrap">
+          <img src="" alt="Nome do produto" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="placeholder-img" style="display:flex;">🍩</div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__nome">Nome do produto</h3>
+          <p class="card__desc">Descrição curta do produto aqui.</p>
+          <p class="card__preco">R$ 0,00</p>
+          <a href="#" class="card__btn btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-1.5-.7-2.5-1.3-3.5-3-.3-.5.3-.4.7-1.4.1-.2 0-.4 0-.5C10.8 9.6 10.4 8.5 10.1 7.7c-.2-.5-.4-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.4-1 2.5 0 1.7 1.2 3.4 1.4 3.6.2.2 2.4 3.7 5.9 5 3.1 1.2 3.1.8 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-3.3.8.9-3.2-.2-.3C3.8 14.7 3.3 13 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7z"/></svg>
+            Fale comigo
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       MENSAGEM COM AMOR
+       ============================================ -->
+  <section class="amor">
+    <div class="amor__caixa">
+      <p class="amor__texto">Feito com muito amor, do jeitinho da Neide 💜</p>
+      <span class="amor__coracao">🧡</span>
+    </div>
+  </section>
+
+  <!-- ============================================
+       NAVBAR INFERIOR — preencha com as informações que quiser
+       ============================================ -->
+  <footer class="footer-nav">
+    <div class="footer-nav__grid">
+      <div class="footer-nav__marca">
+        Neide Lanches
+        <p>Coloque aqui uma frase curta sobre a mercearia.</p>
+      </div>
+      <nav class="footer-nav__coluna">
+        <h4>Coluna 1</h4>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav__coluna">
+        <h4>Coluna 2</h4>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav__coluna">
+        <h4>Coluna 3</h4>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-nav__base">
+      <p>Coloque aqui endereço, horário de funcionamento ou direitos autorais.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
